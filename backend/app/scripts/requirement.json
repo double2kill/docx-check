@@ -1,0 +1,185 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "description": "福州职业技术学院机器人学院毕业设计论文格式规范",
+    "effective_date": "2023-09-01",
+    "applicable_major": "工业机器人技术"
+  },
+  "document_types": {
+    "thesis": {
+      "min_words": 6000,
+      "max_similarity": "30%"
+    },
+    "design": {
+      "min_words": 5000,
+      "requires_prototype": true
+    }
+  },
+  "structure": {
+    "required_sections": [
+      "封面",
+      "个人承诺书",
+      "毕业设计任务书",
+      "目录",
+      "正文",
+      "指导过程记录",
+      "毕业论文（设计）评审表"
+    ],
+    "section_order": [
+      "封面",
+      "个人承诺书",
+      "毕业设计任务书",
+      "目录",
+      "正文.*",
+      "指导过程记录",
+      "毕业论文（设计）评审表"
+    ]
+  },
+  "page_setup": {
+    "paper_size": "A4",
+    "margins": {
+      "top": "2.5cm",
+      "bottom": "2.5cm",
+      "left": "2.5cm",
+      "right": "2.5cm"
+    },
+    "line_spacing": "1.5倍",
+    "pagination_rule": {
+      "start_from": "正文",
+      "position": "外侧",
+      "format": "第 {page} 页"
+    }
+  },
+  "title_styles": {
+    "document_title": {
+      "font": "小二号黑体加粗",
+      "alignment": "居中",
+      "spacing": {
+        "before": "1行",
+        "after": "1行"
+      }
+    },
+    "section_levels": {
+      "level_1": {
+        "prefix": "一、",
+        "font": "四号黑体加粗",
+        "line_break": "独占行",
+        "punctuation": "末尾不加标点"
+      },
+      "level_2": {
+        "prefix": "（一）",
+        "font": "小四号黑体加粗",
+        "line_break": "独占行",
+        "punctuation": "末尾不加标点"
+      },
+      "level_3": {
+        "prefix": "1、",
+        "font": "小四号黑体加粗",
+        "line_break": "可独占行",
+        "punctuation": "独占行则不加标点"
+      },
+      "level_4": {
+        "prefix": "(1)",
+        "font": "小四号宋体",
+        "line_break": "可独占行",
+        "punctuation": "独占行则不加标点"
+      },
+      "level_5": {
+        "prefix": "①",
+        "font": "小四号宋体",
+        "line_break": "不独占行",
+        "punctuation": "标题后加句号"
+      }
+    }
+  },
+  "body_format": {
+    "abstract": {
+      "chinese": {
+        "label": "摘要",
+        "font": {
+          "label": "五号楷体加粗",
+          "content": "五号楷体"
+        },
+        "word_count": "150-300字",
+        "indentation": "首行缩进2字符"
+      },
+      "keywords": {
+        "count": "3-5个",
+        "max_count": 8,
+        "separator": "空格",
+        "font": {
+          "label": "五号楷体加粗",
+          "content": "五号楷体"
+        }
+      }
+    },
+    "main_content": {
+      "font": "小四号宋体",
+      "paragraph": {
+        "indentation": "首行缩进2字符",
+        "alignment": "两端对齐",
+        "line_spacing": "1.5倍"
+      },
+      "special_elements": {
+        "tables": {
+          "caption_position": "上方",
+          "font": "五号宋体",
+          "border": {
+            "outer": "1磅实线",
+            "inner": "0.5磅实线"
+          }
+        },
+        "figures": {
+          "caption_position": "下方",
+          "resolution": "300dpi"
+        }
+      }
+    },
+    "conclusion": {
+      "label_font": "四号黑体加粗",
+      "content_font": "小四号宋体"
+    }
+  },
+  "references": {
+    "format_standard": "GB/T 7714",
+    "styles": {
+      "book": "[序号]作者.书名[文献类型标识].出版地.出版者,出版年.",
+      "journal": "[序号]作者.题名[J].刊名,年,卷(期):起止页码.",
+      "online": {
+        "format": "[序号]作者.题名[EB/OL].网址,日期",
+        "note": "需包含访问日期"
+      }
+    },
+    "font": {
+      "label": "五号楷体加粗",
+      "content": "五号楷体"
+    }
+  },
+  "printing_binding": {
+    "order": [
+      "封面",
+      "个人承诺书",
+      "毕业设计任务书",
+      "目录",
+      "正文",
+      "指导过程记录",
+      "毕业论文（设计）评审表"
+    ],
+    "requirements": {
+      "margins": "左侧装订",
+      "page_numbering": "从正文开始连续编码",
+      "special_notes": [
+        "装订后需保持整洁",
+        "核对个人信息准确性"
+      ]
+    }
+  },
+  "validation_rules": {
+    "strict_mode": true,
+    "auto_fix": ["字体修正", "行距调整"],
+    "error_levels": {
+      "structural": "error",
+      "formatting": "warning"
+    }
+  }
+}
